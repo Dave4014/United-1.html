@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" href="bootstap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id= "form" action="submitform.html" method="GET">
+    <input type="text" id="firstname" name="firstname" required placeholer="Enter your first name">
+    <input type="text" id="name" name="lastname" not required placeholder="Enter your last name">
+    <input type="text" id="email" name="email" required placeholder="Enter your email address">
+    <input type="text" id="comment" name="Comment" not required placeholder="Comment">
+     <button type="submit"></button>
+    </form>
+
+    
+</body>
+<script src="bootstrap.js"></script>
+<script type="text/javascript">
+function resetFormOnSubmit() {
+// todo: add submit to form formspree.io submit//
+       document.getElementById(form).reset();
+   }
+</script>
+
+</html>

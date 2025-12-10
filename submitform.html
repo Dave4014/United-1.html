@@ -1,0 +1,15 @@
+
+<body></body>
+<script> const params = new URLSearchParams(window.location.search); const name = params.get("firstname"); const email = params.get("email"); 
+let valid = true
+if (name== ""){ document.body.innerHTML= "Name not valid"; valid = false}
+if (!email.includes("@")) {
+  document.body.innerHTML =("The string does not contain '@'."); valid = false
+  // Code to execute if the string does NOT contain '@'
+}
+ if (valid) {
+    
+document.body.innerHTML += ` <h1>Form Submitted! Validation Passed </h1> `; console.log (name)
+}
+if (!valid) document.body.innerHTML+= `<p> Validation Failed </p> <a href="./contactform.html">contactform "validtion failed"></a>`
+</script>

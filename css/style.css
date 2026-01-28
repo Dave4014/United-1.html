@@ -1,0 +1,138 @@
+body {
+  background-color: rgb(103, 120, 125); /* Sets the background color of the entire page to light blue */
+
+   
+            
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        input[type="search"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-left: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .results {
+            display: flex;       /* IMPORTANT */
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+
+        img {
+            margin: 10px;
+        }
+             font-family: 'Tangerine', serif;
+        font-size: 48px;
+      
+}
+
+
+.navbar { display: flex; align-items: center; /* vertical alignment */
+     justify-content: space-between; /* space between name and nav */ 
+     padding: 1rem 2rem; background: #111; } 
+.site-name
+     { font-size: 1.5rem; font-weight: bold; color: white; }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { color: white; text-decoration: none; }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- SEARCH ---------- */
+.search-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ---------- FLEX GRID ---------- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.col {
+    flex: 1 0 25%; /* 4 columns desktop */
+    padding: 0.5rem;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* ---------- MOBILE (320px & below) ---------- */
+@media (max-width: 600px) {
+
+    /* 11) Title & navbar stack */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* 12) Nav items stack */
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* 13) Images single column */
+    .col {
+        flex: 1 0 100%;
+    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.25rem 0;
+  }
+}
+* {
+    box-sizing: border-box;
+}
